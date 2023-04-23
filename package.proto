@@ -1,0 +1,11 @@
+syntax = "proto3";
+package QRCodePackage;
+message Package{
+  enum type {
+    HEAD = 0;
+    DATA = 1;
+    BACK = 2;
+  }
+  int32 id = 1;
+  string data = 2;
+}
